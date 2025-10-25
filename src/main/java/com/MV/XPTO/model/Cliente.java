@@ -29,8 +29,11 @@ public class Cliente {
     @Enumerated(EnumType.STRING)
     private PersonType personType;
 
-    private LocalDate createdAt = LocalDate.now();
+    private LocalDate dataAtual = LocalDate.now();
 
     @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Endereco> endereco = new ArrayList<>();
+
+    @OneToMany(mappedBy = "cliente", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<Conta> contas = new java.util.ArrayList<>();
 }

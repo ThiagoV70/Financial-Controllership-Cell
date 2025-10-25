@@ -20,6 +20,6 @@ public class Endereco {
     private String estado;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "client_id")
+    @JoinColumn(name = "cliente_id")
     private Cliente cliente;
-    }
+}
