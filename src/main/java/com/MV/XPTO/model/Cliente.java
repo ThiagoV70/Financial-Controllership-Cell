@@ -1,5 +1,6 @@
 package com.MV.XPTO.model;
 
+import com.MV.XPTO.model.enums.PersonType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
