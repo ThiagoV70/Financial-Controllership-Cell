@@ -25,7 +25,7 @@ public class Conta {
 
     private boolean ativo = true;
 
-    private BigDecimal relatorio = BigDecimal.ZERO;
+    private BigDecimal saldo = BigDecimal.ZERO;
 
     private LocalDate dataAtual = LocalDate.now();
 
